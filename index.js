@@ -121,7 +121,7 @@ app.post('/profesores/', (req,res) => {
         profesores.push(Profesor)
         res.status(201).send(profesores)
     } else {
-        res.status(404).json({})
+        res.status(400).json({})
     }
 })
 
