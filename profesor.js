@@ -14,7 +14,7 @@ let Profesor = {
 }
 
 app.get('/profesores/', (req,res) => {
-    alumnos.findAll().then((users) => {res.status(200).send(users)})
+    profesores.findAll().then((users) => {res.status(200).send(users)})
 })
 
 app.get('/profesores/:id', (req,res) => {
